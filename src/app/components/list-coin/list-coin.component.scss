@@ -1,0 +1,157 @@
+.header {
+    height: 40%;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+
+    h2 {
+        color: white;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
+        margin-bottom: 15px;
+        font-size: 3.75rem;
+        line-height: 1.2;
+        letter-spacing: -0.0083em;
+    }
+
+    h6 {
+        color: white;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        font-size: 0.8rem;
+        line-height: 1.57;
+        letter-spacing: 0.00714em;
+    }
+}
+
+.banner {
+    background-image: url('../../../assets/img/banner9.jpg');
+    background-size: 1400px 769px;
+    height: 460px;
+    width: 100%;
+    // margin-top: 60px;
+    // background-repeat: no-repeat;
+}
+
+.sub-header {
+    height: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.card {
+    border: 0;
+    background-color: transparent;
+    color: #fff;
+    padding: 10px;
+    margin: 20px;
+    width: 100px;
+    height: 200px;
+
+    img {
+        width: 70px;
+        margin: 0 auto;
+        margin-bottom: 15px;
+    }
+
+    h5 {
+        color: white;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+    }
+
+    p {
+        color: white;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+    }
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.search-input {
+    margin: 20px 500px 20px 500px;
+    padding: 10px;
+    border-radius: 50px;
+    background-color: black;
+}
+
+input {
+    width: 300px;
+    padding: 5px;
+    border-radius: 50px;
+    outline: none;
+}
+
+table {
+    width: 100%;
+    
+    // margin-left: 120px;
+}
+
+.mat-form-field {
+    font-size: 14px;
+    width: 100%;
+}
+
+td,
+th {
+    width: 25%;
+    justify-content: center;
+    align-items: center;
+}
+
+th {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    text-transform: uppercase;
+    
+}
+
+td {
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    text-transform: uppercase;
+    
+}
+
+td img {
+    padding-top: 10px;
+}
+
+td p {
+    margin-left: 5px;
+}
+
+:host ::ng-deep .mat-sort-header-content {
+    color: #fff;
+}
+
+:host ::ng-deep .mat-paginator-outer-container {
+    background-color: white;
+}
+
+:host ::ng-deep tr.mat-header-row {
+    background-color: #040d19;
+}
+
+:host ::ng-deep tr.mat-row {
+    height: 70px;
+}
+
+.paginator {
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: uppercase;
+}

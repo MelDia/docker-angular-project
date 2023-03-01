@@ -1,0 +1,26 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-3 details">
+            <div class="img">
+                <img [src]="dataCoin?.image?.large" alt="">
+                <h3 class="text-center" >{{dataCoin?.name}}</h3>
+                <h4 [innerHtml]="dataCoin?.description?.en.split('. ')[0]"></h4>
+                <div class="more-detail">
+                    <span class="title">Rank: </span> <span class="value">{{dataCoin?.market_cap_rank}}</span><br>
+                    <span class="title">Current Price: </span> <span class="value">{{dataCoin?.market_data.current_price.usd | currency: currency}}</span><br>
+                    <span class="title">Market Cap: </span> <span class="value">{{dataCoin?.market_data.market_cap.usd | currency:currency}}</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-8 graphic">
+            <canvas baseChart [data]="lineChartData" [options]="lineChartOptions" [type]="lineChartType"
+            width="400" height="280"></canvas>
+            <div class="d-flex justify-content-around">
+                <button (click)="getGraphic(1)" class="btn btn-custom">24 hours</button>
+                <button (click)="getGraphic(30)" class="btn btn-custom">30 days</button>
+                <button (click)="getGraphic(90)" class="btn btn-custom">90 days</button>
+                <button (click)="getGraphic(365)" class="btn btn-custom">1 year</button>
+            </div>
+        </div>
+    </div>
+</div>
